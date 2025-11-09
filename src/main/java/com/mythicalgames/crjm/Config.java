@@ -19,11 +19,11 @@ public class Config extends OkaeriConfig {
     @Comment(" ")
 
     @Comment("Default join message if group-specific one is not found")
-    public String defaultMessage = "&e{player} joined the game.";
+    public String defaultMessage = "§e{player} joined the game.";
 
     @Comment("Per-group join messages")
     public Map<String, String> groups = new HashMap<String, String>() {{
-        put("admin", "&c[Admin] &f{player} joined the game!");
-        put("moderator", "&b[Mod] &f{player} joined the game!");
+        put("owner", "§c[OWNER] §f{player} is here to cause destruction!");
+        put("moderator", "§b[Mod] §f{player} joined the game!");
     }};
 }
